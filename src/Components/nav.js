@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 const navLinks = [
   {
     title: 'Home',
@@ -26,10 +26,9 @@ export default function Nav() {
       <ul>
         { navLinks.map((link, index) => (
             <li key={index}>
-              {link.title}
+              <Link to= {link.path}>{link.title}</Link>
             </li>
         ))}
       </ul>
-
     </nav>)
 }
