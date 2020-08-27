@@ -1,9 +1,9 @@
 @import './_variables';
 @import './_nav';
 
-body {
+html body {
   font-family: Roboto, "Helvetuca Neue", Arial, Helvetica, sans-serif;
   font-weight: 500;
   margin: 0;
-  background-color: #f8f9f8;
+  background-color: $background;
 }
