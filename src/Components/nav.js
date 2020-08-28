@@ -35,7 +35,7 @@ export default function Nav({ user }) {
             </li>
           ))}
         </ul>
-        <span>
+        <span className="menu-avatar-container">
           <Avatar
             src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
             size={38}
