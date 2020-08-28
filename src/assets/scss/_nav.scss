@@ -82,7 +82,7 @@
       }
 
       li {
-        height: 60px;
+        height: 65px;
         display: flex;
         align-items: center;
       }
@@ -91,10 +91,15 @@
         flex-direction: column;
         justify-content: flex-start;
         padding: 0;
+        padding-top: 20px;
       }
 
       ul, li, .menu-avatar-container {
         width: 100%;
+      }
+
+      .menu-content-container {
+        padding-top: 20px;
       }
 
       &.active {

@@ -50,3 +50,6 @@ export default function Nav({ user }) {
     </nav>
   );
 }
+
+
+//Mouse enter and mouse leave event listeners for clicking off of menu: on menu content container
