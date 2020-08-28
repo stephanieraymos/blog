@@ -6,13 +6,20 @@
   justify-content: space-between;
   color: $text-color;
 
-
   .menu-title {
     font-size: 24px;
     font-weight: 400;
     display: flex;
     align-items: center;
     margin-left: 30px;
+  }
+  
+  .ion-ios-menu {
+    font-size: 36px;
+    width: 65px;
+    align-items: center;
+    cursor: pointer;
+    display: none;
   }
 
   .menu-content-container {
@@ -28,14 +35,6 @@
     .menu-avatar-name {
       font-size: 18px;
       margin-left: 15px;
-    }
-
-    .ion-ios-menu {
-      font-size: 36px;
-      width: 65px;
-      align-items: center;
-      cursor: pointer;
-      display: none;
     }
   }
 
@@ -72,10 +71,9 @@
       top: 65px;
       left: -300px;
       transition: 300ms ease left;
-    
-      .ion-ios-menu {
-        display: flex;
-      }
+    }
+    .ion-ios-menu {
+      display: flex;
     }
   }
 }
