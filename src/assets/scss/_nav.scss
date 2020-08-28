@@ -65,7 +65,14 @@
 @media screen and (max-width: 900px) {
   .site-nav {
     .menu-content-container {
-
+      width: 300px;
+      height: calc(100% - 65px);
+      background: white;
+      position: absolute;
+      top: 65px;
+      left: -300px;
+      transition: 300ms ease left;
+    
       .ion-ios-menu {
         display: flex;
       }

@@ -27,7 +27,7 @@ export default function Nav({user}) {
   return (
     <nav className="site-nav">
       <span className="menu-title">Blog</span>
-      <div className="menu-content-container">
+      <div className={`menu-content-container ${menuActive && 'active'}`}>
         <ul>
           {navLinks.map((link, index) => (
             <li key={index}>
