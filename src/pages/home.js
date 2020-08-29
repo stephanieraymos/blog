@@ -28,6 +28,8 @@ const featuredConfig = {
 const mergeStyles = function (posts, config) {
   posts.forEach((post, index) => {
     post.style = config[index]
+    post.author = 'Stephanie Raymos'
+    post.description = "Stephanie Raymos is a Full Stack Web Developer who enjoys spending time with her son."
   })
 }
 
