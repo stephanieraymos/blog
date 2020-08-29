@@ -1,5 +1,9 @@
-@import './_variables';
-@import './_nav';
+@import './variables';
+@import './nav';
+@import './home';
+@import './masonry-post';
+@import './post-masonry';
+
 
 html body {
   font-family: Roboto, "Helvetuca Neue", Arial, Helvetica, sans-serif;
