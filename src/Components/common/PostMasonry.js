@@ -3,7 +3,7 @@ import {MasonryPost} from './'
 
 export default function PostMasonry({posts, columns, tagsOnTop}) {
     return (
-        <section className="masonry" style={{gridTemplateColumns: `repeat(${columns}, min<ax(275px, 1fr))`}}>
+        <section className="masonry" style={{gridTemplateColumns: `repeat(${columns}, min<max(275px, 1fr))`}}>
            { posts.map((post, index) =>
             <MasonryPost {...{post, index, tagsOnTop, key: index}} />
            )} 
