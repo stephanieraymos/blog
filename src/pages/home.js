@@ -1,7 +1,7 @@
 import React from 'react'
 import trending from '../assets/mocks/trending'
-import {PostMasonry} from '../Components/common'
-
+import featured from '../assets/mocks/featured'
+import { PostMasonry, MasonryPost, PostGrid } from '../Components/common'
 
 const trendingConfig = {
   1: {
@@ -33,17 +33,37 @@ const mergeStyles = function (posts, config) {
   })
 }
 
+const recentPosts = [...trending, ...featured, ...featured]
+
+mergeStyles(featured, featuredConfig)
 mergeStyles(trending, trendingConfig)
+
+const lastPost = featured.pop()
 
 export default function Home () {
   return (
-  <section className="container home">
-      <div className="row">
-          <h2>Trending Posts</h2>
-
-          <PostMasonry posts={trending} columns={3} />
-      </div>
-
-  </section>
+    <main className="home">
+      <section className="container">
+        <div className="row">
+          <section className="featured-posts-container">
+            <PostMasonry posts={featured} columns={2} tagsOnTop={true} />
+            <MasonryPost post={lastPost} tagsOnTop={true} />
+          </section>
+        </div>
+      </section>
+      <section className="bg-white">
+        <section className="container">
+          <div className="row">
+            <h1>Recent Posts</h1>
+            <PostGrid posts={recentPosts} />
+          </div>
+        </section>
+      </section>
+      <section className="container">
+        <div className="row">
+          <PostMasonry posts={trending} columns={3}/>
+        </div>
+      </section>
+    </main>
   )
 }
