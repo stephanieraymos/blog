@@ -1,7 +1,7 @@
 import React from 'react'
 import trending from '../assets/mocks/trending'
 import featured from '../assets/mocks/featured'
-import { PostMasonry, MasonryPost, PostGrid } from '../Components/common'
+import { PostMasonry, MasonryPost } from '../Components/common'
 
 const trendingConfig = {
   1: {
@@ -51,14 +51,14 @@ export default function Home () {
           </section>
         </div>
       </section>
-      <section className="bg-white">
+      {/* <section className="bg-white">
         <section className="container">
           <div className="row">
             <h1>Recent Posts</h1>
             <PostGrid posts={recentPosts} />
           </div>
         </section>
-      </section>
+      </section> */}
       <section className="container">
         <div className="row">
           <PostMasonry posts={trending} columns={3}/>
