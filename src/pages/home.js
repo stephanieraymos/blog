@@ -16,6 +16,8 @@ const mergeStyles = function (posts, config) {
   })
 }
 
+mergeStyles(trending, trendingConfig)
+
 export default function Home () {
   return (
   <section className="container home">
