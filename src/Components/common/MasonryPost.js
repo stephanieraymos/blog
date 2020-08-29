@@ -1,4 +1,5 @@
 import React from "react";
+import {catergoryColors} from './styles';
 
 export default function MasonryPost({ post, tagsOnTop }) {
   const style = {
@@ -9,7 +10,9 @@ export default function MasonryPost({ post, tagsOnTop }) {
     <a className="masonry-post overlay" style={style} href={post.link}>
       <div classname="image-text">
         <div className="tags-container">
-            {post.catergories.map((tag, ind) => <span key={index} className="tag" style={{backgroundColor: catergoryColors(tag)}}></span>)}
+            {post.catergories.map((tag, ind) => <span key={ind} className="tag" style={{backgroundColor: catergoryColors[tag]}}>
+                {tag.toUpperCase()}
+            </span>)}
           <div>
             <h2 classname="image-title">{post.title}</h2>
             <span className="image-date">{post.date}</span>
