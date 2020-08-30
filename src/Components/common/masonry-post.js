@@ -6,13 +6,14 @@ export default function MasonryPost({ post, tagsOnTop }) {
     backgroundImage: `url("${require(`../../assets/img/${post.image}`)}")`,
   };
 
-  const style = {...imageBackground, ...postMessage.style}
+  const style = {...imageBackground, ...post.style}
   
   return (
     <a className="masonry-post overlay" style={style} href={post.link}>
       <div classname="image-text">
         <div className="tags-container">
-            {post.catergories.map((tag, ind) => <span key={ind} className="tag" style={{backgroundColor: catergoryColors[tag]}}>
+            {post.catergories.map((tag, ind) => 
+              <span key={ind} className="tag" style={{backgroundColor: catergoryColors[tag]}}>
                 {tag.toUpperCase()}
             </span>)}
           <div>
