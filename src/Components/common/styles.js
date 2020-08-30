@@ -5,6 +5,7 @@ const catergoryColors = {
     'Money': 'rgb(52,199,89)',
     'Sleeping': 'rgb(64,156,255)',
     'Positive Thinking': 'rgb(255,179,64)',
+    'Other': 'rgb(88, 86, 214)'
 
 }
 
