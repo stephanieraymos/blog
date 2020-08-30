@@ -30,7 +30,12 @@ return posts.slice(firstIndex, lastIndex)
             <p className="author-text">
               <span>
                 By: 
-                <Link to={`/authors/${post.author}`} />
+                <Link to={`/authors/${post.author}`}>
+                  {post.author}
+                </Link>
+              </span>
+              <span>
+                - {post.date}
               </span>
             </p>
           </div>
