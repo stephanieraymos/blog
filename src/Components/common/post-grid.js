@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Pagination } from 'antd'
+import { TagRow } from './'
 
 export default function PostGrid({ posts }) {
   const [pageSize, setPageSize] = useState(9)
@@ -24,6 +25,14 @@ return posts.slice(firstIndex, lastIndex)
                 <img src={require(`../../assets/img/${post.image}`)} alt={post.image} />
               </Link>
             </figure>
+            <TagRow tags={post.catergories} />
+            <h2>{post.title}</h2>
+            <p className="author-text">
+              <span>
+                By: 
+                <Link to={`/authors/${post.author}`} />
+              </span>
+            </p>
           </div>
         ))}
       </section>
