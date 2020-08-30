@@ -1,5 +1,5 @@
 import React from 'react'
-import {MasonryPost} from './'
+import {MasonryPost} from '.'
 
 export default function PostMasonry({posts, columns, tagsOnTop}) {
     return (

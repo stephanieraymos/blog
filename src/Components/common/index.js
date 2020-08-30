@@ -1,5 +1,5 @@
-import PostMasonry from './PostMasonry'
-import MasonryPost from './MasonryPost'
+import PostMasonry from './post-masonry'
+import MasonryPost from './masonry-post'
 
 export {
     MasonryPost,
