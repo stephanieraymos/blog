@@ -17,15 +17,15 @@ return posts.slice(firstIndex, lastIndex)
   return (
     <section className="grid-pagination-container">
       <section className="post-grid container">
-        {paginatedPosts.map((post, index) => {
+        {paginatedPosts.map((post, index) => (
           <div className="post-container">
             <figure>
               <Link to={post.link}>
-                <img src={require('../../assets/img/${post.image}')} alt={post.image} />
+                <img src={require(`../../assets/img/${post.image}`)} alt={post.image} />
               </Link>
             </figure>
           </div>
-        })}
+        ))}
       </section>
       <Pagination
         simple
