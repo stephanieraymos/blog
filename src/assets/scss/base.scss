@@ -4,8 +4,9 @@
 @import './masonry-posts';
 @import './posts-masonry';
 @import './tags-row';
+@import './post-grid';
 
-html body {
+body {
   font-family: Roboto, "Helvetuca Neue", Arial, Helvetica, sans-serif;
   font-weight: 500;
   margin: 0;
