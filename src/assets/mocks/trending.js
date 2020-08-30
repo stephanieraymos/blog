@@ -11,35 +11,35 @@ export default [
     {
         title: 'Kids',
         date: moment().format('MMMM DD, YYYY'),
-        catergories: ['Breastfeeding', 'Other'],
+        catergories: ['Other'],
         link: 'a',
         image: 'kidbeach.jpg'
     },
     {
         title: 'Apple',
         date: moment().format('MMMM DD, YYYY'),
-        catergories: ['Breastfeeding', 'Other'],
+        catergories: ['Food', 'Other'],
         link: 'a',
         image: 'apples.jpg'
     },
     {
         title: 'Money',
         date: moment().format('MMMM DD, YYYY'),
-        catergories: ['Breastfeeding', 'Other'],
+        catergories: ['Money', 'Other'],
         link: 'a',
         image: 'money.jpg'
     },
     {
         title: 'Sleeping',
         date: moment().format('MMMM DD, YYYY'),
-        catergories: ['Breastfeeding', 'Other'],
+        catergories: ['Sleeping', 'Other'],
         link: 'a',
         image: 'babysleep.jpg'
     },
     {
         title: 'Positive Thinking',
         date: moment().format('MMMM DD, YYYY'),
-        catergories: ['Breastfeeding', 'Other'],
+        catergories: ['Positive Thinking', 'Other'],
         link: 'a',
         image: 'smile.jpg'
     }
