@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Pagination } from 'antd'
 
 export default function PostGrid({ posts }) {
-  const [pageSize, setPageSize] = useState
+  const [pageSize, setPageSize] = useState(9)
   const [current, setCurrent] = useState(1)
 
   return (
