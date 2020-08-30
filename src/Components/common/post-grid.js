@@ -38,6 +38,10 @@ return posts.slice(firstIndex, lastIndex)
                 - {post.date}
               </span>
             </p>
+            <p className="description-text">
+              {post.description}
+            </p>
+            <Link to={post.link}>Read more...</Link>
           </div>
         ))}
       </section>
