@@ -38,19 +38,21 @@ const recentPosts = [...trending, ...featured, ...featured]
 mergeStyles(featured, featuredConfig)
 mergeStyles(trending, trendingConfig)
 
-const lastFeatured = featured.pop()
+const lastPost = featured.pop()
 
 export default function Home() {
   return (
+    
     <main className="home">
       <section className="container">
         <div className="row">
           <section className="featured-posts-container">
             <PostMasonry posts={featured} columns={2} tagsOnTop={true} />
-            <MasonryPost post={lastFeatured} tagsOnTop={true} />
+            <MasonryPost post={lastPost} tagsOnTop={true} />
           </section>
         </div>
       </section>
+
       <section className="bg-white">
         <section className="container">
           <div className="row">
@@ -59,6 +61,7 @@ export default function Home() {
           </div>
         </section>
       </section>
+
       <section className="container">
         <div className="row">
           <PostMasonry posts={trending} columns={3} />
