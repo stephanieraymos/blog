@@ -6,7 +6,7 @@ import { PostMasonry, MasonryPost } from '../Components/common'
 const trendingConfig = {
   1: {
     gridArea: '1 / 2 / 3 / 3'
-    
+
   }
 }
 
@@ -40,7 +40,7 @@ mergeStyles(trending, trendingConfig)
 
 const lastFeatured = featured.pop()
 
-export default function Home () {
+export default function Home() {
   return (
     <main className="home">
       <section className="container">
@@ -51,17 +51,17 @@ export default function Home () {
           </section>
         </div>
       </section>
-      {/* <section className="bg-white">
+      <section className="bg-white">
         <section className="container">
           <div className="row">
             <h1>Recent Posts</h1>
             <PostGrid posts={recentPosts} />
           </div>
         </section>
-      </section> */}
+      </section>
       <section className="container">
         <div className="row">
-          <PostMasonry posts={trending} columns={3}/>
+          <PostMasonry posts={trending} columns={3} />
         </div>
       </section>
     </main>
