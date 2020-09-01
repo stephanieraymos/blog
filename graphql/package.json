@@ -1,0 +1,11 @@
+{
+  "name": "blog-backend",
+  "version": "1.0.0",
+  "description": "Koa and GraphQL backend for React Blog",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Stephanie Raymos",
+  "license": "ISC"
+}
