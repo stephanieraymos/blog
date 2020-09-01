@@ -1,7 +1,7 @@
 import React from 'react'
+import { PostMasonry, MasonryPost, PostGrid } from '../Components/common'
 import trending from '../assets/mocks/trending'
 import featured from '../assets/mocks/featured'
-import { PostMasonry, MasonryPost, PostGrid } from '../Components/common'
 
 const trendingConfig = {
   1: {
@@ -35,8 +35,8 @@ const mergeStyles = function (posts, config) {
 
 const recentPosts = [...trending, ...featured, ...featured]
 
-mergeStyles(featured, featuredConfig)
 mergeStyles(trending, trendingConfig)
+mergeStyles(featured, featuredConfig)
 
 const lastPost = featured.pop()
 
