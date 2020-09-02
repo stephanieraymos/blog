@@ -57,7 +57,6 @@ useEffect(() => {
       <Pagination
         simple
         showSizeChanger
-        onShowSizeChange
         onShowSizeChange={setPageSize}
         pageSize={pageSize}
         total = {posts.length}
