@@ -1,6 +1,6 @@
-import moment from 'moment'
+const moment = require('moment')
 
-export default [
+module.exports = [
     {
         title: 'Breastfeeding',
         date: moment().format('MMMM DD, YYYY'),
