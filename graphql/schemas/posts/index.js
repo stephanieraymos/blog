@@ -9,7 +9,7 @@ module.exports = {
     Query: {
       trendingPosts: () => trendingPosts,
       featuredPosts: () => featuredPosts,
-      recentPosts: () => [...trendingPosts, ...featuredPosts, ...featuredPosts],
+      recentPosts: () => [...trendingPosts, ...featuredPosts, ...featuredPosts]
     },
   },
   schema: fs
