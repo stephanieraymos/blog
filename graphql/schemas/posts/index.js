@@ -14,7 +14,7 @@ module.exports = {
   },
   schema: fs
     .readFileSync( //Returns file buffer.
-      path.resolver(
+      path.resolve(
         __dirname, //Current path that we're in. (Finds absolute path.)
         "./posts-schema.graphql"
       )
