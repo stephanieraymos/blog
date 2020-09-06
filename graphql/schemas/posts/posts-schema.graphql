@@ -1,0 +1,5 @@
+type Query {
+  trendingPosts: [Post] ! 
+  featuredPosts: [Post] ! 
+  recentPosts: [Post] ! 
+}
