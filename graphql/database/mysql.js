@@ -10,3 +10,5 @@ let config = {
     multipleStatements: true
   }
 }
+
+module.exports=require('knex')(config)
