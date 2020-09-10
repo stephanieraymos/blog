@@ -2,7 +2,7 @@ const Koa = require('koa')
 const {ApolloServer} = require('apollo-server-koa')
 const {makeExecutableSchema} = require('graphql-tools')
 const {resolvers, typeDefs} = require('./schemas')
-const PORT = 4000 //3308 -> ISSUE: PORT 3308 ALREADY IN USE when running node app. Reverting back to 4000 and app is functioning at the level prior to wamp config
+const PORT = 3308 //3308 -> ISSUE: PORT 3308 ALREADY IN USE when running node app. Reverting back to 4000 and app is functioning at the level prior to wamp config
 
 const server = new ApolloServer({
   schema: makeExecutableSchema({typeDefs, resolvers})
