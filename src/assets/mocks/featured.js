@@ -29,32 +29,32 @@ export default [
         link: '#',
         image: 'money.jpg'
     },
-    {
-        title: 'Sleeping',
-        date: moment().format('MMMM DD, YYYY'),
-        catergories: ['Sleeping', 'Other'],
-        link: '#',
-        image: 'babysleep.jpg'
-    },
-    {
-        title: 'Positive Thinking',
-        date: moment().format('MMMM DD, YYYY'),
-        catergories: ['Positive Thinking', 'Other'],
-        link: '#',
-        image: 'smile.jpg'
-    },
-    {
-        title: 'Potty Training',
-        date: moment().format('MMMM DD, YYYY'),
-        catergories: ['Other'],
-        link: '#',
-        image: 'laughkid.jpg'
-    },
-    {
-        title: 'How to Save Money',
-        date: moment().format('MMMM DD, YYYY'),
-        catergories: ['Money', 'Other'],
-        link: '#',
-        image: 'friends.jpeg'
-    }
+    // {
+    //     title: 'Sleeping',
+    //     date: moment().format('MMMM DD, YYYY'),
+    //     catergories: ['Sleeping', 'Other'],
+    //     link: '#',
+    //     image: 'babysleep.jpg'
+    // },
+    // {
+    //     title: 'Positive Thinking',
+    //     date: moment().format('MMMM DD, YYYY'),
+    //     catergories: ['Positive Thinking', 'Other'],
+    //     link: '#',
+    //     image: 'smile.jpg'
+    // },
+    // {
+    //     title: 'Potty Training',
+    //     date: moment().format('MMMM DD, YYYY'),
+    //     catergories: ['Other'],
+    //     link: '#',
+    //     image: 'laughkid.jpg'
+    // },
+    // {
+    //     title: 'How to Save Money',
+    //     date: moment().format('MMMM DD, YYYY'),
+    //     catergories: ['Money', 'Other'],
+    //     link: '#',
+    //     image: 'friends.jpeg'
+    // }
 ]
