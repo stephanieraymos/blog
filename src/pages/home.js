@@ -18,7 +18,7 @@ const featuredConfig = {
   1: {
     height: '300px'
   },
-  3: {
+  3: {   //This one is not part of the grid, it should be displaying to the right of the grid
     height: '630px',
     marginLeft: '30px',
     width: '630px'
