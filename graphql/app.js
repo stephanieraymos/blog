@@ -35,3 +35,6 @@ server.applyMiddleware({app}) //applying koa middleware to server
 app.listen({port: PORT}, () => {
   console.log(`Server ready at http://localhost:${PORT + server.graphqlPath} `)
 })
+
+
+module.exports = app;
