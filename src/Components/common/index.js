@@ -1,4 +1,4 @@
-import PostMasonry from './post-masonry'
+import PostMasonry from './PostMasonry'
 import MasonryPost from './MasonryPost'
 import PostGrid from './PostGrid'
 import TagRow from './TagRow'
