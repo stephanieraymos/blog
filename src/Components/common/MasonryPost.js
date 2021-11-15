@@ -1,11 +1,11 @@
 import React from "react";
-import {TagRow} from './'
+import TagRow from "./TagRow";
 
-export default function MasonryPost({ post, tagsOnTop }) {
+const MasonryPost = ({ post, tagsOnTop }) => {
   const windowWidth = window.innerWidth
 
   const imageBackground = {
-    backgroundImage: `url("${require(`../../assets/img/${post.image}`)}")`
+    backgroundImage: `url("${require(`../../assets/img/${post.image}`)}")`,
   };
 
   const style = windowWidth > 900 ? { ...imageBackground, ...post.style } : imageBackground
@@ -22,3 +22,5 @@ export default function MasonryPost({ post, tagsOnTop }) {
     </a>
   );
 }
+
+export default MasonryPost;

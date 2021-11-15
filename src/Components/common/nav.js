@@ -21,7 +21,7 @@ const navLinks = [
   },
 ];
 
-export default function Nav({ user }) {
+const Nav = ({ user }) => {
   const [menuActive, setMenuActive] = useState(false);
 
   return (
@@ -37,7 +37,7 @@ export default function Nav({ user }) {
         </ul>
         <span className="menu-avatar-container">
           <Avatar
-            src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+            src="../../assets/img/me.jpg"
             size={38}
           />
           <span className="menu-avatar-name">{`${user.firstName} ${user.lastName}`}</span>
@@ -51,5 +51,6 @@ export default function Nav({ user }) {
   );
 }
 
+export default Nav;
 
 //Mouse enter and mouse leave event listeners for clicking off of menu: on menu content container

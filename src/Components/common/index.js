@@ -1,7 +1,7 @@
 import PostMasonry from './post-masonry'
-import MasonryPost from './masonry-post'
-import PostGrid from './post-grid'
-import TagRow from './tag-row'
+import MasonryPost from './MasonryPost'
+import PostGrid from './PostGrid'
+import TagRow from './TagRow'
 
 export {
     MasonryPost,
