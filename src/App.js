@@ -1,9 +1,9 @@
 import React from 'react';
-import Nav from './Components/common/nav'
+import Nav from './Components/common/Nav'
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 import PageRenderer from './page-renderer'
 
-function App() {
+const App = () => {
   const user = {
     firstName: 'Stephanie',
     lastName: 'Raymos'
